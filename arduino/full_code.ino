@@ -371,7 +371,7 @@ void Mav_Request_Data()
   const uint8_t MAVStreams[maxStreams] = {MAV_DATA_STREAM_ALL};
   const uint16_t MAVRates[maxStreams] = {0x02};
     
-  for (int i=0; i < maxStreams; i++) {
+  for (int i=0; i < maxStreams; i++) { //如何请求的数据，请求了哪些数据，没有看懂
     /*
      * mavlink_msg_request_data_stream_pack(system_id, component_id, 
      *    &msg, 
